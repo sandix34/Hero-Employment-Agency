@@ -11,9 +11,15 @@ export class HeroListComponent implements OnInit {
 
   // simple declaration
   heroes: Hero[];
+  selectedHero: Hero;
 
   // Add a private heroService parameter of type HeroService to the constructor.
   constructor(private heroService: HeroService) { }
+
+  onSelect(hero: Hero): void {
+    console.log(hero);
+    this.selectedHero = hero;
+  }
   
   // function to retrieve the heroes from the service
   getHeroes(): void {
