@@ -17,7 +17,8 @@ export class HeroListComponent implements OnInit {
   
   // function to retrieve the heroes from the service
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes()
+        .subscribe(heroes => this.heroes = heroes);
   }
 
   // call getHeroes() inside the ngOnInit lifecycle hook
