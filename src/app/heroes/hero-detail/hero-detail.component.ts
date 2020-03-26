@@ -17,7 +17,7 @@ export class HeroDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    // private router: Router,
+    private router: Router,
     private service: HeroService
   ) {}
 
@@ -28,4 +28,7 @@ export class HeroDetailComponent implements OnInit {
     );
   }
 
+  gotoHeroes() {
+    this.router.navigate(['/heroes']);
+  }
 }
