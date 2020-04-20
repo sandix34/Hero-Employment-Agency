@@ -8,6 +8,7 @@ import { HeroesModule }     from './heroes/heroes.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 @NgModule({
   imports: [
     FormsModule,
@@ -20,6 +21,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    ComposeMessageComponent,
   ],
   bootstrap: [ AppComponent ]
 })
