@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
 import { AdminModule }             from './admin/admin.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { AdminModule }             from './admin/admin.module';
     HeroesModule,
     CrisisCenterModule,
     AdminModule,
+    AuthModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
@@ -24,7 +26,7 @@ import { AdminModule }             from './admin/admin.module';
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    ComposeMessageComponent,
+    ComposeMessageComponent
   ],
   bootstrap: [ AppComponent ]
 })
